@@ -2,7 +2,8 @@ from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 
-app = Flask(__name__, static_folder='../frontend/build', static_url_path='')
+app = Flask(__name__, static_folder='../frontend_compi/build',
+            static_url_path='')
 
 # Habilitar CORS para permitir solicitudes desde React (si es necesario)
 CORS(app)
