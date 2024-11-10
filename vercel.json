@@ -5,7 +5,7 @@
     { "src": "backend_compi/app.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/frontend_compi/dist/$1" },
-    { "src": "/api/(.*)", "dest": "/backend_compi/app.py" }
+    { "src": "/api/(.*)", "dest": "/backend_compi/app.py" },
+    { "src": "/(.*)", "dest": "/frontend_compi/dist/$1" }
   ]
 }
