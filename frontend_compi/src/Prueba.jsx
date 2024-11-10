@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import Carousel from './components/DatosInicio/Carousel';
 function Prueba() {
   const [data, setData] = useState(null);
 
@@ -12,6 +12,7 @@ function Prueba() {
 
   return (
     <div>
+      <Carousel />
       <h1>React y Flask</h1>
       {data ? (
         <div>
