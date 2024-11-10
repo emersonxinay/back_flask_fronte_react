@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend_compi/package.json",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "backend_compi/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/frontend_compi/$1" },
+    { "src": "/api/(.*)", "dest": "/backend_compi/app.py" }
+  ]
+}
