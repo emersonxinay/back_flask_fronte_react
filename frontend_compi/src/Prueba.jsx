@@ -4,7 +4,7 @@ function Prueba() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("api/data")
+    fetch("https://backcompilando.vercel.app/api/data")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));
