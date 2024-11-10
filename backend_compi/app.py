@@ -2,11 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-
-# Habilitar CORS
-CORS(app)
-
-# Ruta de la API
+CORS(app)  # Habilitar CORS si es necesario
 
 
 @app.route('/api/data', methods=['GET'])
